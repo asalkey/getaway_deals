@@ -1,0 +1,11 @@
+if(document.getElementById("city").value == ""){
+    $('.alert').show().html('Please enter a city');
+} else {
+    $('.alert').hide();
+    $('#results').html('<%= j render("results") %>');
+    $(".toggle").click(function() {
+    var txt = ($(this).next(".toggle-description").is(":visible") ? "show description" : "hide description");
+    $(this).text(txt);
+    $(this).next(".toggle-description").toggle();
+  });
+}

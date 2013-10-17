@@ -1,0 +1,17 @@
+  <%= form_tag getaways_path, :method => 'get', remote: true do%>
+    <div class="span5">
+      <%= label_tag(:city, "What city?:") %>
+      <%= text_field_tag :city, params[:city]  %>
+      <div style="display:none" class="alert alert-error"></div>
+    </div>
+   <div class="span3">
+      <%= label_tag(:checkin, "Check-in:") %>
+      <%= text_field_tag :checkin,params[:checkin],:class => 'datepicker' %>
+    </div>
+    <div class="span3">
+      <%= label_tag(:checkout, "Check-out:") %>
+      <%= text_field_tag :checkout,params[:checkout],:class => 'datepicker' %>
+    </div>
+    <%= submit_tag "Search", :class => "btn" %>
+    </div>
+  <% end %>

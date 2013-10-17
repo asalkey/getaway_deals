@@ -1,0 +1,66 @@
+// Place all the styles related to the getaways controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bootstrap';
+
+body{
+  background:#135571;
+  form{
+    margin-top:30px;
+  }
+  header{
+    background:#fff;
+    height:60px;
+    padding:3px;
+    h1 a{
+      color:#CD5C5C;
+      &:hover{
+        text-decoration:none;
+        color:#CD5C5C;
+      }
+    }
+  }
+  .search{
+    color:#fff;
+    h1{
+      font-size:40px;
+      text-align:center
+    }
+  }
+  #city{
+    width:94%;
+  }
+  input[type="text"]{
+    font-size:20px;
+    border:none;
+    padding:10px;
+  }
+  input[type="submit"]{
+    margin-top:50px;
+  }
+  label{
+    font-size:30px;
+    margin-bottom:20px;
+  }
+  input.btn[type="submit"]{
+    border:thick solid #fff;
+    background:none;
+    color:#fff;
+    font-size:30px;
+    width:100%;
+    text-shadow:none;
+
+  }
+  .toggle-description{
+    display:none;
+  }
+  .row{
+    margin-top:20px;
+    padding:20px 0;
+    border-bottom:thin solid #D3D3D3;
+  }
+  #results{
+    background:#fff;
+  }
+}

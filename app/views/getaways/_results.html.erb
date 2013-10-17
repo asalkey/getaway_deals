@@ -1,0 +1,21 @@
+  <div class="container">
+    <% @deals.each do |deal| %>
+      <div class="row">
+        <div class="span2">
+          <img src="<%=deal['imageUrl']%>">
+        </div>
+        <div class="span10">
+          <ul>
+            <li><%=deal['name']%></li>
+            <li><%=deal['streetAddress']%></li>
+            <li><%=deal['starRating'] %> star </li>
+            <li>Guest rating: <%=deal['guestRating'] %></li>
+            <li>Current Rate: $<%=deal['baseRate'] %> for total stay</li>
+            <li>You save: <%=deal['percentSavings'] %>%</li>
+          </ul>
+          <button class="toggle"> show description </button>
+          <p class="toggle-description"><%=deal['description']%> </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
